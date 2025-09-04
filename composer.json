@@ -1,0 +1,36 @@
+{
+    "name": "millancore/vite",
+    "description": "PHP Vite Manifest Manager",
+    "type": "library",
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.3",
+        "phpstan/phpstan": "^2.1",
+        "friendsofphp/php-cs-fixer": "^3.87"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Millancore\\Vite\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Millancore\\Vite\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --",
+        "stan": "phpstan analyse",
+        "fixer": "php-cs-fixer fix"
+    },
+    "authors": [
+        {
+            "name": "Juan Millan",
+            "email": "juanes14569@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

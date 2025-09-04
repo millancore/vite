@@ -1,0 +1,18 @@
+{
+  "main.js": {
+    "file": "assets/main.12345.js",
+    "src": "main.js",
+    "isEntry": true,
+    "css": ["assets/main.67890.css"]
+  },
+  "style.css": {
+    "file": "assets/style.abcde.css",
+    "src": "style.css"
+  },
+  "entry-no-css.js": {
+    "file": "assets/entry-no-css.fghij.js",
+    "src": "entry-no-css.js",
+    "isEntry": true,
+    "css": []
+  }
+}
