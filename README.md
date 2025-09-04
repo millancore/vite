@@ -43,12 +43,12 @@ composer require millancore/vite
 
     ```php
     // In the <head> of your HTML
-    <?php $cssPath = $vite->styles('main.js'); ?>
-    <?php if ($cssPath):
-    ?>
-        <link rel="stylesheet" href="<?= $cssPath ?>">
-    <?php endif;
-    ?>
+    <?php $cssFiles = $vite->styles('main.js'); ?>
+    <?php foreach($cssFiles as $css): ?>
+    
+        <link rel="stylesheet" href="<?= $css ?>">
+    
+    <?php endforeach; ?>
     ```
 
 4.  **React Fast Refresh (Development):**
